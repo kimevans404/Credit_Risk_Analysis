@@ -14,6 +14,11 @@ To apply machine learning to solve a real-world challenge: credit card risk. Thi
 <img width="710" alt="Random2Confusion" src="https://user-images.githubusercontent.com/111471057/216112220-ade8303c-ddbd-4bab-bb90-1e5b2639c950.png">
 <img width="710" alt="Random3Report" src="https://user-images.githubusercontent.com/111471057/216112231-e24976ee-8331-4e46-a075-a3afa63277af.png">
 
+- Balanced Accuracy: 64.6%
+- High Risk Precision: 1%
+- Low Risk Precision: 100%
+- High Risk Sensitivity: 61%
+- Low Risk Sensitivity: 68%
 
 #### SMOTE Oversampling
 
@@ -21,6 +26,11 @@ To apply machine learning to solve a real-world challenge: credit card risk. Thi
 <img width="715" alt="Smote2Confusion" src="https://user-images.githubusercontent.com/111471057/216112282-e99d3c6c-e85e-4c29-81ab-b4f6f6361482.png">
 <img width="715" alt="Smote3Report" src="https://user-images.githubusercontent.com/111471057/216112291-95e2b53d-28ab-494e-a2ae-2af09ff68d22.png">
 
+- Balanced Accuracy: 62%
+- High Risk Precision: 1%
+- Low Risk Precision: 100%
+- High Risk Sensitivity: 61%
+- Low Risk Sensitivity: 64%
 
 #### Cluster Centroids Undersampling
 
@@ -28,14 +38,23 @@ To apply machine learning to solve a real-world challenge: credit card risk. Thi
 <img width="715" alt="Cluster2Confusion" src="https://user-images.githubusercontent.com/111471057/216112639-ae9a9341-37f0-4c00-97a9-916f285146d4.png">
 <img width="715" alt="Cluster3Report" src="https://user-images.githubusercontent.com/111471057/216112649-c912298b-35d5-447e-8b7b-407fc1e85069.png">
 
+- Balanced Accuracy: 51%
+- High Risk Precision: 1%
+- Low Risk Precision: 100%
+- High Risk Sensitivity: 61%
+- Low Risk Sensitivity: 42%
 
-#### Using SMOTEENN algorithm to Predict Credit Risk
+### Using SMOTEENN algorithm to Predict Credit Risk
 
 <img width="720" alt="Smoteenn1Accuracy" src="https://user-images.githubusercontent.com/111471057/216113252-14370954-52c2-45d3-a42e-a9015fd29048.png">
 <img width="720" alt="Smoteenn2Confusion" src="https://user-images.githubusercontent.com/111471057/216113271-687981dd-9f63-46dc-ac13-ba476be9fdc1.png">
 <img width="720" alt="Smoteen3Report" src="https://user-images.githubusercontent.com/111471057/216113284-aba38108-f4b4-4dda-8928-d38eca0ecd3d.png">
 
-
+- Balanced Accuracy: 61.6%
+- High Risk Precision: 1%
+- Low Risk Precision: 100%
+- High Risk Sensitivity: 69%
+- Low Risk Sensitivity: 54%
 
 ### Using Ensemble Classifiers to Predict Credit Risk
 
@@ -45,6 +64,11 @@ To apply machine learning to solve a real-world challenge: credit card risk. Thi
 <img width="720" alt="Forest2Confusion" src="https://user-images.githubusercontent.com/111471057/216114134-7112f74f-4c67-4490-a239-011355003818.png">
 <img width="720" alt="Forest3Report" src="https://user-images.githubusercontent.com/111471057/216114140-5eb9d693-e518-4537-addf-e4dadfa1f908.png">
 
+- Balanced Accuracy: 78.8%
+- High Risk Precision: 4%
+- Low Risk Precision: 100%
+- High Risk Sensitivity: 67%
+- Low Risk Sensitivity: 91%
 
 #### Easy Ensemble AdaBoost classifier
 
@@ -52,7 +76,12 @@ To apply machine learning to solve a real-world challenge: credit card risk. Thi
 <img width="510" alt="Easy2Confusion" src="https://user-images.githubusercontent.com/111471057/216114465-2215ca1c-36a3-4b2c-b3ae-2ca743488e81.png">
 <img width="719" alt="Easy3Report" src="https://user-images.githubusercontent.com/111471057/216114489-12fd3277-8740-4f5a-9dc7-357eacae36f2.png">
 
+- Balanced Accuracy: 92.5%
+- High Risk Precision: 7%
+- Low Risk Precision: 100%
+- High Risk Sensitivity: 91%
+- Low Risk Sensitivity: 94%
 
 ## Summary
 
-Evaluate the performance of these models and make a written recommendation on whether they should be used to predict credit risk.
+While we expect most applicants not to be high risk, these models would miss many high risk applicants with the exception of the Easy Ensemble Classifier which is catching 91% of those applicants. The main issue with this model is that the high risk precision is only at 7%. I would not in good conscience recommend any of these models.
